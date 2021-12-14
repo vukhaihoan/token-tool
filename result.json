@@ -1,0 +1,22 @@
+[
+  { "address": "0x189B53420Ff8F12368B231E0Eed477206bE5067D", "balance": 60 },
+  { "address": "0xb258aA903dA61198E8F93E3d1d80f62b03d856Bf", "balance": 20 },
+  { "address": "0x25F5Dda269c2f43C1D6A1Ba2D3F2d2992B465580", "balance": 40 },
+  { "address": "0xC640ae40FBe9e8b157668cb2c8bEdD5deD07dC08", "balance": 40 },
+  { "address": "0xBd3A10BA578A32B8A49961137FE7aBb29E73D8b5", "balance": 40 },
+  { "address": "0x2C6a2394B3b0dE8604F6a91Fc569Da8c20ACc557", "balance": 40 },
+  { "address": "0xCA7257006Ba94BEC52B7D43734513584569B2564", "balance": 40 },
+  { "address": "0x678C6019D959EdED80C43B230ad0A6c0288087de", "balance": 40 },
+  { "address": "0xE8331a45353e425Edda18ecb07Ee56Baa662979F", "balance": 40 },
+  { "address": "0x794A6dD11787477F49b75bDdFb8Ec6700A49F028", "balance": 40 },
+  { "address": "0xe10236402f38E9b1b67EFc43672aCdDa701F8f88", "balance": 40 },
+  { "address": "0xa4aEB5fc13a5C32946481dcCa2821781a9820136", "balance": 40 },
+  { "address": "0x6765f2e645F425b48AA588A398a5f0e16Cd09f82", "balance": 40 },
+  { "address": "0xc7e841B58E8c865Dc663a80A2782d013C47c2992", "balance": 40 },
+  { "address": "0xB6b64803BafBad2Dc92E31197813F0bff0e0B9b7", "balance": 40 },
+  { "address": "0x8d5917518d66808201625ec4C10296FF9FF90F5B", "balance": 40 },
+  { "address": "0xfD28eFE0F91F7ff4Fb2953B0092D4249D38D48D9", "balance": 40 },
+  { "address": "0x467a6c963Ac4BB019385247F321F2B0116e8f728", "balance": 40 },
+  { "address": "0x3Ee4F96A1343541e6cC27fac48017B0CD61bE711", "balance": 40 },
+  { "address": "0x4ECB5DA41b8af2C5C11c195904b62615f16E46AE", "balance": 40 }
+]
