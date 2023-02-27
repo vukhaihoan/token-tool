@@ -1,10 +1,11 @@
 [
   {
-    "address": "0xC596D1F4C75EF7DBE697b2B6A7A5b6E4517Fa29A",
-    "totalBusdSwapIn": 13.256964193250454,
-    "totalBusdSwapOut": 0,
-    "totalWbnbSwapIn": 0.029393709999999997,
-    "totalWbnbSwapOut": 0.2244325184988999,
-    "pefiBalance": "0"
+    "address": "0x53187594E3B1445e5abA83e76605b8b951A75168",
+    "totalBusdSwapIn": 455.1707854940865,
+    "totalBusdSwapOut": 732.15667759553,
+    "totalWbnbSwapIn": 0.014509099379051881,
+    "totalWbnbSwapOut": 0.14627179493128742,
+    "totalOther": 0,
+    "erc20Balance": "0"
   }
 ]

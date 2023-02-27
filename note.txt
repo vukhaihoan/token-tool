@@ -1,0 +1,2 @@
+  // const eventSignature = "Transfer(address,address,uint256)";
+  // const eventTopic = ethers.utils.id(eventSignature); // Get the data hex string for the event signature
