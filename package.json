@@ -9,17 +9,20 @@
     "solcoin": "node solCoin.js",
     "soltoken": "node solToken.js",
     "soldev": "nodemon soltoken.js",
-    "check": "node checkpefi.js"
+    "checkerc20": "node checkerc20.js",
+    "log": "node log.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@moralisweb3/common-evm-utils": "^2.14.3",
     "@solana/web3.js": "^1.31.0",
     "axios": "^0.24.0",
     "dotenv": "^10.0.0",
     "ethers": "^6.0.8",
     "json2csv": "^5.0.6",
     "kardia-js-sdk": "^0.5.3",
+    "moralis": "^2.14.3",
     "web3": "^1.8.2"
   }
 }
