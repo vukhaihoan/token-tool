@@ -15,6 +15,7 @@ const MORALIST_API_KEY = process.env.MORALIST_API_KEY;
 
 const web3 = new Web3(RPC_ENDPOINT);
 const provider = new ethers.JsonRpcProvider(RPC_ENDPOINT);
+const { delay } = require("./utils");
 
 const Type = {
   BUSD_SWAP_IN: "BUSD_SWAP_IN",
@@ -377,6 +378,7 @@ async function main() {
         break;
       }
       const res = await runPerAddress(line);
+      await delay(1000);
       listArr.push(res);
       console.log("Done with address: ", line);
     }
