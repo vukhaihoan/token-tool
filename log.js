@@ -77,36 +77,36 @@ const chain = EvmChain.BSC;
 
 const TransferInstance = new ethers.Interface(TransferAbi);
 
-const fieldsListAddress = [
-  {
-    label: "address",
-    value: "address",
-  },
-  {
-    label: "totalBusdSwapIn",
-    value: "totalBusdSwapIn",
-  },
-  {
-    label: "totalBusdSwapOut",
-    value: "totalBusdSwapOut",
-  },
-  {
-    label: "totalWbnbSwapIn",
-    value: "totalWbnbSwapIn",
-  },
-  {
-    label: "totalWbnbSwapOut",
-    value: "totalWbnbSwapOut",
-  },
-  {
-    label: "totalOther",
-    value: "totalOther",
-  },
-  {
-    label: "erc20Balance",
-    value: "erc20Balance",
-  },
-];
+// const fieldsListAddress = [
+//   {
+//     label: "address",
+//     value: "address",
+//   },
+//   {
+//     label: "total BUSD SwapIn",
+//     value: "totalBusdSwapIn",
+//   },
+//   {
+//     label: "total BUSD SwapOut",
+//     value: "totalBusdSwapOut",
+//   },
+//   {
+//     label: "total BNB SwapIn",
+//     value: "totalWbnbSwapIn",
+//   },
+//   {
+//     label: "total BNB SwapOut",
+//     value: "totalWbnbSwapOut",
+//   },
+//   {
+//     label: "totalOther",
+//     value: "totalOther",
+//   },
+//   {
+//     label: "Plant Empires Token",
+//     value: "erc20Balance",
+//   },
+// ];
 
 // const fieldsPerAddress = [
 //   {
@@ -384,10 +384,45 @@ async function main() {
   await processLineByLine();
   console.log("All Address Done");
   fs.writeFileSync("result/address.json", JSON.stringify(listArr, null, 2));
-  const x = new Parser({ fieldsListAddress });
-  const content = x.parse(listArr);
-  fs.writeFileSync("excel/address.csv", content);
-  console.log("File save success");
+  // const x = new Parser({ fieldsListAddress });
+  // const content = x.parse(listArr);
+  // fs.writeFileSync("excel/address.csv", content);
+  // console.log("File save success");
+
+  const createCsvWriter = require("csv-writer").createObjectCsvWriter;
+  const csvWriter = createCsvWriter({
+    path: "excel/address.csv",
+    header: [
+      {
+        id: "address",
+        title: "Address",
+      },
+      {
+        id: "totalBusdSwapIn",
+        title: "Total BUSD Swap In",
+      },
+      {
+        id: "totalBusdSwapOut",
+        title: "Total BUSD Swap Out",
+      },
+      {
+        id: "totalWbnbSwapIn",
+        title: "Total BNB Swap In",
+      },
+      {
+        id: "totalWbnbSwapOut",
+        title: "Total BNB Swap Out",
+      },
+      {
+        id: "erc20Balance",
+        title: "Plant Empires Token",
+      },
+    ],
+  });
+
+  csvWriter.writeRecords(listArr).then(() => {
+    console.log("wrote to csv address");
+  });
 }
 
 main();

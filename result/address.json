@@ -1,11 +1,47 @@
 [
   {
-    "address": "0x53187594E3B1445e5abA83e76605b8b951A75168",
-    "totalBusdSwapIn": 455.1707854940865,
-    "totalBusdSwapOut": 732.15667759553,
-    "totalWbnbSwapIn": 0.014509099379051881,
-    "totalWbnbSwapOut": 0.14627179493128742,
+    "address": "0x8636167f22d00a747797f051c55a67accae81c66",
+    "totalBusdSwapIn": 1102.53404,
+    "totalBusdSwapOut": 1241.0625494149986,
+    "totalWbnbSwapIn": 0,
+    "totalWbnbSwapOut": 0,
     "totalOther": 0,
-    "erc20Balance": "0"
+    "erc20Balance": "0.892989692209182524"
+  },
+  {
+    "address": "0xe5e233235216dae46386c43c979a14c176cdd8ee",
+    "totalBusdSwapIn": 658.65765,
+    "totalBusdSwapOut": 713.7716779987252,
+    "totalWbnbSwapIn": 0,
+    "totalWbnbSwapOut": 0,
+    "totalOther": 0,
+    "erc20Balance": "0.431739536970929189"
+  },
+  {
+    "address": "0xda058b3fc72741b435704b98de313775364e312e",
+    "totalBusdSwapIn": 1080.7472,
+    "totalBusdSwapOut": 1187.9339058236426,
+    "totalWbnbSwapIn": 0,
+    "totalWbnbSwapOut": 0,
+    "totalOther": 0,
+    "erc20Balance": "0.761564084027305962"
+  },
+  {
+    "address": "0xdea617676286408d4be98e2b4f5e0a2fe4d28eb3",
+    "totalBusdSwapIn": 700.38689,
+    "totalBusdSwapOut": 784.0135682218602,
+    "totalWbnbSwapIn": 0,
+    "totalWbnbSwapOut": 0,
+    "totalOther": 0,
+    "erc20Balance": "0.015127569902770434"
+  },
+  {
+    "address": "0xb0223cbcf665e713d92cd2c0a4a7baa14dfbf178",
+    "totalBusdSwapIn": 1219.73633,
+    "totalBusdSwapOut": 1331.2657809573068,
+    "totalWbnbSwapIn": 0,
+    "totalWbnbSwapOut": 0,
+    "totalOther": 0,
+    "erc20Balance": "4091.372107373392916843"
   }
 ]
