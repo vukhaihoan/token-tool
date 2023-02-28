@@ -1,2 +1,4 @@
   // const eventSignature = "Transfer(address,address,uint256)";
   // const eventTopic = ethers.utils.id(eventSignature); // Get the data hex string for the event signature
+
+  có bao nhiêu address hiện tại đang add lz lp, và số lượng lp đang add

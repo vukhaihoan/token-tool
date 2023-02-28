@@ -360,13 +360,10 @@ const runPerAddress = async (address) => {
   };
 };
 
-async function main() {
-  await Moralis.start({
-    apiKey: MORALIST_API_KEY,
-  });
+async function main(number) {
   const listArr = [];
   async function processLineByLine() {
-    const fileStream = fs.createReadStream("inputAddress/bnb.txt");
+    const fileStream = fs.createReadStream(`inputAddress/bnb${number}.txt`);
 
     const rl = readline.createInterface({
       input: fileStream,
@@ -385,7 +382,10 @@ async function main() {
   }
   await processLineByLine();
   console.log("All Address Done");
-  fs.writeFileSync("result/address.json", JSON.stringify(listArr, null, 2));
+  fs.writeFileSync(
+    `result/address${number}.json`,
+    JSON.stringify(listArr, null, 2)
+  );
   // const x = new Parser({ fieldsListAddress });
   // const content = x.parse(listArr);
   // fs.writeFileSync("excel/address.csv", content);
@@ -393,7 +393,7 @@ async function main() {
 
   const createCsvWriter = require("csv-writer").createObjectCsvWriter;
   const csvWriter = createCsvWriter({
-    path: "excel/address.csv",
+    path: `excel/address${number}.csv`,
     header: [
       {
         id: "address",
@@ -427,4 +427,18 @@ async function main() {
   });
 }
 
-main();
+async function run() {
+  await Moralis.start({
+    apiKey: MORALIST_API_KEY,
+  });
+  for await (const i of [34]) {
+    console.log("Start with file bnb", i);
+    await main(i);
+    console.log(
+      `Done with file bnb${i}.txt, waiting for 3s to start with bnb${i + 1}.txt`
+    );
+    await delay(3000);
+  }
+}
+
+run();
