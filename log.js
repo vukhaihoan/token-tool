@@ -308,7 +308,7 @@ const runPerAddress = async (address) => {
   const listLogWithAdded = addTypeAndValue(NotEmptyListLog);
 
   fs.writeFileSync(
-    `result/parserlogs_${address}.json`,
+    `results/parserlogs_${address}.json`,
     JSON.stringify(
       listLogWithAdded,
       (key, value) => (typeof value === "bigint" ? value.toString() : value), // return everything else unchanged
@@ -324,7 +324,7 @@ const runPerAddress = async (address) => {
 
   const createCsvWriter = require("csv-writer").createObjectCsvWriter;
   const csvWriter = createCsvWriter({
-    path: `excel/parserlogs_${address}.csv`,
+    path: `excels/parserlogs_${address}.csv`,
     header: [
       {
         id: "tokenIn",
